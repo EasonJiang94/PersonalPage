@@ -1,7 +1,8 @@
 // src/sections/Projects.tsx
 "use client";
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
+import * as motion from 'motion/react-client';
 import { projects } from '@/data/projects';
 
 const Projects = () => {

@@ -10,27 +10,10 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    id: "beseye",
-    title: "Senior Software Engineer (AI Team)",
-    company: "Beseye",
-    period: "2020 - Present",
-    location: "Taiwan",
-    responsibilities: [
-      "Lead AI model development and deployment",
-      "Design and implement cloud infrastructure",
-      "Mentor junior engineers and coordinate with cross-functional teams"
-    ],
-    achievements: [
-      "Improved model accuracy by 25%",
-      "Reduced infrastructure costs by 40%",
-      "Successfully deployed to 100+ enterprise clients"
-    ]
-  },
-  {
     id: "upmc",
     title: "Software Engineer",
     company: "UPMC - MoSHI Lab",
-    period: "2018 - 2020",
+    period: "Jun. 2024 - Present",
     location: "Pittsburgh, PA",
     responsibilities: [
       "Developed data visualization tools",
@@ -44,10 +27,28 @@ export const experiences: Experience[] = [
     ]
   },
   {
+    id: "beseye",
+    title: "Senior Software Engineer (AI Team Leader)",
+    company: "Beseye",
+    period: "2020 - 2023",
+    location: "Taiwan",
+    responsibilities: [
+      "Lead AI model development and deployment",
+      "Design and implement cloud infrastructure",
+      "Mentor junior engineers and coordinate with cross-functional teams"
+    ],
+    achievements: [
+      "Improved model accuracy by 25%",
+      "Reduced infrastructure costs by 40%",
+      "Successfully deployed to 100+ enterprise clients"
+    ]
+  },
+  
+  {
     id: "itri",
     title: "Software Engineer",
     company: "Industrial Technology Research Institute",
-    period: "2016 - 2018",
+    period: "2017 - 2019",
     location: "Taiwan",
     responsibilities: [
       "Developed embedded systems",
