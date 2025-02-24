@@ -1,8 +1,8 @@
 // src/sections/Experience.tsx
-
+"use client";
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import experiences from '@/data/experience';
+import { experiences } from '@/data/experience';
 
 const Experience = () => {
   const [selectedExperience, setSelectedExperience] = useState<number | null>(null);
@@ -19,11 +19,11 @@ const Experience = () => {
               onClick={() => setSelectedExperience(index)}
               whileHover={{ scale: 1.02 }}
             >
-              <h3 className="text-xl font-semibold">{experience.role}</h3>
-              <p className="text-gray-600">{experience.company} - {experience.duration}</p>
+              <h3 className="text-xl font-semibold">{experience.title}</h3>
+              <p className="text-gray-600">{experience.company} - {experience.period}</p>
               {selectedExperience === index && (
                 <div className="mt-4">
-                  <p>{experience.details}</p>
+                  <p>{experience.responsibilities}</p>
                 </div>
               )}
             </motion.div>

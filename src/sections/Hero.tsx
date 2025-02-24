@@ -1,8 +1,8 @@
 // src/sections/Hero.tsx
-
+"use client";
 import React from 'react';
-import { motion } from 'framer-motion';
-import personalInfo from '@/data/personalInfo';
+import {motion} from 'framer-motion';
+import { personalInfo } from '@/data/personalInfo';
 
 const Hero = () => {
   return (

@@ -1,25 +1,27 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Layout from '@/components/layout/Layout'
-
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'Yi-Hsin (Eason) Chiang - Portfolio',
-  description: 'Software Engineer and AI Specialist portfolio showcasing projects and experience',
+import { ReactNode } from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import { AnimatePresence } from 'framer-motion';
+import * as motion from 'motion/react-client';
+interface LayoutProps {
+  children: ReactNode;
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function Layout({ children }: LayoutProps) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>
-        <Layout>{children}</Layout>
-      </body>
-    </html>
-  )
-} 
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <Header />
+      <AnimatePresence mode="wait">
+        <motion.main
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          className="container mx-auto px-4 py-8"
+        >
+          {children}
+        </motion.main>
+      </AnimatePresence>
+      <Footer />
+    </div>
+  );
+}

@@ -12,7 +12,12 @@
     "@heroicons/react": "^2.2.0",
     "autoprefixer": "^10.4.20",
     "framer-motion": "^12.4.7",
-    "next": "15.1.7",
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.4",
+    "motion": "^12.4.7",
+    "next": "^15.1.7",
+    "pdfkit": "^0.16.0",
+    "pdfmake": "^0.2.18",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

@@ -5,5 +5,5 @@ export const personalInfo = {
   github: "https://github.com/yourusername",
   linkedin: "https://linkedin.com/in/yourusername",
   bio: "Experienced software engineer specializing in AI and full-stack development. Passionate about building innovative solutions and leveraging cutting-edge technologies to solve complex problems.",
-  profileImage: "/images/profile.jpg"
+  profileImage: "/images/profile.png"
 };

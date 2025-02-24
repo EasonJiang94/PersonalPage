@@ -1,7 +1,7 @@
 // src/sections/Education.tsx
 
 import React from 'react';
-import education from '@/data/education';
+import { education } from '@/data/education';
 
 const Education = () => {
   return (
@@ -12,7 +12,7 @@ const Education = () => {
           {education.map((edu, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-semibold">{edu.degree}</h3>
-              <p className="text-gray-600">{edu.school} - {edu.graduation}</p>
+              <p className="text-gray-600">{edu.school} - {edu.period}</p>
               <p>{edu.details}</p>
             </div>
           ))}
