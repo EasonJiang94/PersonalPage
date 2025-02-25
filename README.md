@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
+
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+
+## Prerequisites
+
+- Node.js (v20.10.0 or higher)
+- npm (v10.2.3 or higher)
 
 ## Getting Started
 
-First, run the development server:
-
+1. Clone the repository
+```bash=1
+git clone <repository-url>
+cd portfolio
+```
+2. Install dependencies
+```bash
+npm install
+```
+3. Create required update your personal info in 
+`src/data/personalInfo.ts`
+`src/data/education.ts`
+`src/data/experience.ts`
+`src/data/projects.ts`
+4. Start the development server
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+## Project Structure
+portfolio/
+├── src/
+│ ├── app/ # Next.js app directory
+│ ├── components/ # Reusable components
+│ ├── sections/ # Page sections
+│ ├── data/ # Data files
+│ └── styles/ # Global styles
+├── public/ # Static files
+└── ...config files
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+
+## Deployment
+
+### AWS S3 + CloudFront
+1. install and setting aws config
+```
+brew install awscli 
+# or 
+# curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"  # Linux
+
+aws configure
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. deploy
+```bash
+npm run deploy:aws
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Make sure to configure AWS credentials before deploying.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
 
-## Learn More
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[MIT](https://choosealicense.com/licenses/mit/)
