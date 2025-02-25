@@ -27,7 +27,7 @@ npm install
 ```bash
 npm run dev
 ```
-## Project Structure
+<!-- ## Project Structure
 portfolio/
 ├── src/
 │ ├── app/ # Next.js app directory
@@ -36,7 +36,7 @@ portfolio/
 │ ├── data/ # Data files
 │ └── styles/ # Global styles
 ├── public/ # Static files
-└── ...config files
+└── ...config files -->
 
 ## Available Scripts
 
