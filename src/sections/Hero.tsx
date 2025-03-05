@@ -26,7 +26,7 @@ export default function Hero() {
                 transition={{ delay: 0.2 }}
                 className="text-blue-600 dark:text-blue-400 font-medium"
               >
-                Hello, I'm
+                Hello, I am
               </motion.p>
               {/* <motion.img
                 src="/images/profile.jpg"

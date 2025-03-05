@@ -22,8 +22,13 @@ const Experience = () => {
               <h3 className="text-xl font-semibold">{experience.title}</h3>
               <p className="text-gray-600">{experience.company} - {experience.period}</p>
               {selectedExperience === index && (
-                <div className="mt-4">
-                  <p>{experience.responsibilities}</p>
+                <div className="mt-4 space-y-2">
+                  {experience.responsibilities.map((responsibility, idx) => (
+                    <p key={idx} className="flex items-start">
+                      <span className="mr-2">•</span>
+                      <span>{responsibility}</span>
+                    </p>
+                  ))}
                 </div>
               )}
             </motion.div>
